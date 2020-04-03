@@ -552,6 +552,9 @@ next_thread_to_run (void)
 
     list_remove(&max_thread->elem);
     return max_thread;
+  //else
+    //return list_entry (list_pop_front (&ready_list), struct thread, elem);
+}
 
   //else
     //return list_entry (list_pop_front (&ready_list), struct thread, elem);
